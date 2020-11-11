@@ -1,0 +1,11 @@
+.rotate1 {
+    transform: rotateY(90deg);
+    transition: all 1s linear;
+    
+}
+
+.rotate2 {
+    transform: rotateY(0deg);
+    transition: all 1s linear;
+    
+}

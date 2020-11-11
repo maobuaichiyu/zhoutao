@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "icon";
+  src: url(../static/font/zslhx.ttf);
+}
+
+html {
+  cursor: url('../static/images/gameStart/mouse.png'), auto;
+  overflow: hidden;
+}
+
+.bigBox {
+  background: url(../static/images/gameStart/background.png) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  min-width: 1000px;
+  min-height: 800px;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.bigBox .warp {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.1;
+  background-color: black;
+}
+
+.bigBox .snow {
+  position: absolute;
+  width: 70px;
+  height: 60px;
+  background-size: cover;
+  z-index: 50;
+}
+
+.bigBox .snow1 {
+  background: url(../static/images/gameStart/hua1.png) no-repeat;
+}
+
+.bigBox .snow2 {
+  background: url(../static/images/gameStart/hua2.png) no-repeat;
+}
+
+.bigBox .snow3 {
+  background: url(../static/images/gameStart/hua3.png) no-repeat;
+}
+
+.bigBox .snow4 {
+  background: url(../static/images/gameStart/hua4.png) no-repeat;
+}
+
+.bigBox .snow5 {
+  background: url(../static/images/gameStart/hua5.png) no-repeat;
+}
+
+.bigBox .cartoon {
+  position: absolute;
+  transition: 1s all;
+  opacity: 1;
+  z-index: 999;
+}
+
+.bigBox .position {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-264px);
+  bottom: 50px;
+  z-index: 90;
+}
+
+.bigBox .boss {
+  height: 205px;
+  width: 229px;
+  transform: rotateY(180deg);
+  position: absolute;
+  z-index: 500;
+}
+
+.bigBox .weak {
+  position: absolute;
+  left: 229px;
+  top: 126px;
+  width: 63px;
+  height: 67px;
+  z-index: 500;
+}
+
+.bigBox div {
+  margin: 0 auto;
+}
+
+.bigBox div p {
+  font-family: "icon";
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.bigBox .game-name {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 50%;
+  top: 150px;
+  z-index: 100;
+  transform: translateX(-150px);
+}
+
+.bigBox .game-name p {
+  cursor: pointer;
+  font-size: 60px;
+  color: orange;
+}
+
+.bigBox .game-name p:hover {
+  color: greenyellow;
+  cursor: url('../static/images/gameStart/mouse.png'), auto;
+}
+
+.bigBox .game-start {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 50%;
+  bottom: 310px;
+  transform: translateX(-150px);
+  z-index: 100;
+}
+
+.bigBox .game-start p {
+  font-size: 60px;
+  color: #FFEC8B;
+}
+
+.bigBox .game-start p:hover {
+  color: pink;
+  cursor: url('../static/images/gameStart/mouse.png'), auto;
+}
+
+.bigBox .game-help {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 50%;
+  bottom: 230px;
+  transform: translateX(-150px);
+  z-index: 100;
+}
+
+.bigBox .game-help p {
+  font-size: 60px;
+  color: salmon;
+}
+
+.bigBox .game-help p:hover {
+  color: skyblue;
+  cursor: url('../static/images/gameStart/mouse.png'), auto;
+}
+
+.bigBox .phb {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  left: 50%;
+  bottom: 150px;
+  transform: translateX(-150px);
+  z-index: 100;
+}
+
+.bigBox .phb p {
+  font-size: 60px;
+  color: purple;
+}
+
+.bigBox .phb p:hover {
+  color: goldenrod;
+  cursor: url('../static/images/gameStart/mouse.png'), auto;
+}

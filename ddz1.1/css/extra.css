@@ -1,0 +1,446 @@
+html {
+    cursor: url(../static/images/bg/shou3.png), auto;
+}
+
+a:hover {
+    cursor: url(../static/images/bg/shou1.png), auto;
+}
+
+a:active {
+    cursor: url(../static/images/bg/shou2.png), auto;
+}
+
+.music {
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+.scene {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: 201;
+}
+
+.scene .scene-pic {
+    position: absolute;
+    width: 696px;
+    height: 538px;
+    background: url(../static/images/bg/sc1.jpg) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.scene .scene-pic a {
+    width: 164px;
+    height: 98px;
+    margin: 5px 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.center-bottom .chat {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    bottom: 25px;
+}
+
+.center-bottom .chat .chat-item {
+    position: absolute;
+    top: -580px;
+    left: -300px;
+    width: 400px;
+    height: 580px;
+    background: url(../static/images/bg/bag1.png) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: none;
+}
+
+.center-bottom .chat .chat-item li {
+    font-size: 16px;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fcd144;
+}
+
+.center-bottom .chat .chat-item li:hover {
+    background-color: #ff6700;
+}
+
+.scene .scene-pic img {
+    width: 150px;
+    height: 84px;
+}
+
+.animation1 {
+    /* 连对 */
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-200px);
+    bottom: 0;
+    position: absolute;
+    z-index: 30;
+    animation: run-an 3s linear infinite;
+    display: none;
+}
+
+.animation2 {
+    /* shunzi */
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-200px);
+    bottom: 0;
+    position: absolute;
+    z-index: 30;
+    animation: run-an1 3s linear infinite;
+    display: none;
+}
+
+.animation3 {
+    /* zhadan */
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    transform: translateX(-300px);
+    bottom: 0;
+    position: absolute;
+    z-index: 30;
+    animation: run-an2 3s linear infinite;
+    display: none;
+}
+
+.animation4 {
+    /* 王炸 */
+    width: 400px;
+    height: 300px;
+    left: 50%;
+    transform: translateX(-173px);
+    bottom: 0;
+    position: absolute;
+    z-index: 30;
+    animation: run-an4 3s linear infinite;
+    display: none;
+}
+
+.animation5 {
+    /* 飞机 */
+    width: 500px;
+    height: 300px;
+    left: 0;
+    bottom: -100px;
+    position: absolute;
+    z-index: 30;
+    animation: run-an5 3s linear infinite;
+    background: url(../static/images/text/plane.png) no-repeat;
+    display: none;
+}
+
+@keyframes run-an {
+    0% {
+        background: url(../static/images/animation/1064-1.png) no-repeat;
+        background-size: cover;
+    }
+
+    10% {
+        background: url(../static/images/animation/1064-2.png) no-repeat;
+        background-size: cover;
+    }
+
+    20% {
+        background: url(../static/images/animation/1064-3.png) no-repeat;
+        background-size: cover;
+    }
+
+    30% {
+        background: url(../static/images/animation/1064-4.png) no-repeat;
+        background-size: cover;
+    }
+
+    40% {
+        background: url(../static/images/animation/1064-5.png) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(../static/images/animation/1064-6.png) no-repeat;
+        background-size: cover;
+    }
+
+    60% {
+        background: url(../static/images/animation/1064-7.png) no-repeat;
+        background-size: cover;
+    }
+
+    70% {
+        background: url(../static/images/animation/1064-8.png) no-repeat;
+        background-size: cover;
+    }
+
+    80% {
+        background: url(../static/images/animation/1064-9.png) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(../static/images/animation/1064-10.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+@keyframes run-an1 {
+    0% {
+        background: url(../static/images/animation/shunzi/0.png) no-repeat;
+        background-size: cover;
+    }
+
+    6% {
+        background: url(../static/images/animation/shunzi/1.png) no-repeat;
+        background-size: cover;
+    }
+
+    12% {
+        background: url(../static/images/animation/shunzi/2.png) no-repeat;
+        background-size: cover;
+    }
+
+    18% {
+        background: url(../static/images/animation/shunzi/3.png) no-repeat;
+        background-size: cover;
+    }
+
+    24% {
+        background: url(../static/images/animation/shunzi/4.png) no-repeat;
+        background-size: cover;
+    }
+
+    30% {
+        background: url(../static/images/animation/shunzi/5.png) no-repeat;
+        background-size: cover;
+    }
+
+    36% {
+        background: url(../static/images/animation/shunzi/6.png) no-repeat;
+        background-size: cover;
+    }
+
+    42% {
+        background: url(../static/images/animation/shunzi/7.png) no-repeat;
+        background-size: cover;
+    }
+
+    48% {
+        background: url(../static/images/animation/shunzi/8.png) no-repeat;
+        background-size: cover;
+    }
+
+    54% {
+        background: url(../static/images/animation/shunzi/9.png) no-repeat;
+        background-size: cover;
+    }
+
+    60% {
+        background: url(../static/images/animation/shunzi/10.png) no-repeat;
+        background-size: cover;
+    }
+
+    66% {
+        background: url(../static/images/animation/shunzi/11.png) no-repeat;
+        background-size: cover;
+    }
+
+    72% {
+        background: url(../static/images/animation/shunzi/12.png) no-repeat;
+        background-size: cover;
+    }
+
+    78% {
+        background: url(../static/images/animation/shunzi/13.png) no-repeat;
+        background-size: cover;
+    }
+
+    84% {
+        background: url(../static/images/animation/shunzi/14.png) no-repeat;
+        background-size: cover;
+    }
+
+    90% {
+        background: url(../static/images/animation/shunzi/15.png) no-repeat;
+        background-size: cover;
+    }
+
+    96% {
+        background: url(../static/images/animation/shunzi/16.png) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(../static/images/animation/shunzi/17.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+@keyframes run-an2 {
+    0% {
+        background: url(../static/images/animation/zhadan/1001-1.png) no-repeat;
+        background-size: cover;
+    }
+
+    4% {
+        background: url(../static/images/animation/zhadan/1001-2.png) no-repeat;
+        background-size: cover;
+    }
+
+    8% {
+        background: url(../static/images/animation/zhadan/1001-3.png) no-repeat;
+        background-size: cover;
+    }
+
+    12% {
+        background: url(../static/images/animation/zhadan/1001-4.png) no-repeat;
+        background-size: cover;
+    }
+
+    16% {
+        background: url(../static/images/animation/zhadan/1001-5.png) no-repeat;
+        background-size: cover;
+    }
+
+    20% {
+        background: url(../static/images/animation/zhadan/1001-6.png) no-repeat;
+        background-size: cover;
+    }
+
+    25% {
+        background: url(../static/images/animation/zhadan/1001-7.png) no-repeat;
+        background-size: cover;
+    }
+
+    29% {
+        background: url(../static/images/animation/zhadan/1001-8.png) no-repeat;
+        background-size: cover;
+    }
+
+    34% {
+        background: url(../static/images/animation/zhadan/1001-9.png) no-repeat;
+        background-size: cover;
+    }
+
+    38% {
+        background: url(../static/images/animation/zhadan/1001-10.png) no-repeat;
+        background-size: cover;
+    }
+
+    42% {
+        background: url(../static/images/animation/zhadan/1001-11.png) no-repeat;
+        background-size: cover;
+    }
+
+    46% {
+        background: url(../static/images/animation/zhadan/1001-12.png) no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(../static/images/animation/zhadan/1001-13.png) no-repeat;
+        background-size: cover;
+    }
+
+    54% {
+        background: url(../static/images/animation/zhadan/1001-14.png) no-repeat;
+        background-size: cover;
+    }
+
+    58% {
+        background: url(../static/images/animation/zhadan/1001-15.png) no-repeat;
+        background-size: cover;
+    }
+
+    62% {
+        background: url(../static/images/animation/zhadan/1001-16.png) no-repeat;
+        background-size: cover;
+    }
+
+    66% {
+        background: url(../static/images/animation/zhadan/1001-17.png) no-repeat;
+        background-size: cover;
+    }
+
+    70% {
+        background: url(../static/images/animation/zhadan/1001-18.png) no-repeat;
+        background-size: cover;
+    }
+
+    74% {
+        background: url(../static/images/animation/zhadan/1001-19.png) no-repeat;
+        background-size: cover;
+    }
+
+    78% {
+        background: url(../static/images/animation/zhadan/1001-20.png) no-repeat;
+        background-size: cover;
+    }
+
+    82% {
+        background: url(../static/images/animation/zhadan/1001-21.png) no-repeat;
+        background-size: cover;
+    }
+
+    86% {
+        background: url(../static/images/animation/zhadan/1001-22.png) no-repeat;
+        background-size: cover;
+    }
+
+    91% {
+        background: url(../static/images/animation/zhadan/1001-23.png) no-repeat;
+        background-size: cover;
+    }
+
+    95% {
+        background: url(../static/images/animation/zhadan/1001-24.png) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(../static/images/animation/zhadan/1001-24.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+@keyframes run-an4 {
+    0% {
+        background: url(../static/images/bg/bz1.gif) no-repeat;
+        background-size: cover;
+    }
+
+    33% {
+        background: url(../static/images/bg/bg2.gif) no-repeat;
+        background-size: cover;
+    }
+
+    66% {
+        background: url(../static/images/bg/bz3.gif) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(../static/images/bg/bz4.gif) no-repeat;
+        background-size: cover;
+    }
+}
+
+@keyframes run-an5 {
+    0% {
+        left: -50%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斗地主</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/rotate.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/extra.css">
+</head>
+
+<body>
+    <div class="bgs">
+        <div class="bgs-container">
+            <div class="bg-item item1 item-active"></div>
+            <div class="bg-item item2"></div>
+            <div class="bg-item item3"></div>
+            <div class="bg-item item4"></div>
+            <div class="bg-item item5"></div>
+            <div class="bg-item item6"></div>
+            <div class="bg-item item7"></div>
+            <div class="bg-item item8"></div>
+            <div class="bg-item item9"></div>
+            <div class="bg-item item10"></div>
+            <div class="bg-item item11"></div>
+            <div class="bg-item item12"></div>
+            <div class="bg-item item13"></div>
+            <div class="bg-item item14"></div>
+            <div class="bg-item item15"></div>
+            <div class="bg-item item16"></div>
+            <div class="bg-item item17"></div>
+            <div class="bg-item item18"></div>
+            <div class="bg-item item19"></div>
+            <div class="bg-item item20"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left">
+                <div class="time-box">
+                    <span class="time"></span>
+                </div>
+                <div class="call-box">
+                    <a href="#" class="call btn-3d green">叫地主</a>
+                    <a href="#" class="no-call btn-3d purple">不叫</a>
+                </div>
+                <div class="text-box">
+                </div>
+                <div class="discard-box">
+                    <a class="btn-3d red discard">出牌</a>
+                    <a class="btn-3d yellow no-discard">不出</a>
+                    <a class="btn-3d blue tips">提示</a>
+                </div>
+                <div class="card-count-box">
+                    <span class="card-count"></span>
+                </div>
+                <ul class="play play1">
+                </ul>
+                <div class="info-box" style="display: none;">
+                    <div class="box-left">
+                        <div class="avatar">
+                            <img src="" alt="">
+                            <div class="rank"></div>
+                        </div>
+                        <div class="nickname"></div>
+                    </div>
+                    <div class="box-right">
+                        <div class="bean">
+                            <span></span>
+                            <p class="bean-count"></p>
+                        </div>
+                        <div class="bei">
+                            <span></span>
+                            <p class="bei-number"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="center-top">
+                    <div class="room-info">
+                        <span></span>
+                    </div>
+                    <div class="music">
+                        <a href="#" class="btn-3d cyan music-btn">音乐</a>
+                    </div>
+                    <!-- 动画 -->
+                    <div class="animation">
+                        <div class="animation1"></div>
+                        <div class="animation2"></div>
+                        <div class="animation3"></div>
+                        <div class="animation4"></div>
+                        <div class="animation5"></div>
+                    </div>
+                    <div class="scene">
+                        <a href="#" class="btn-3d red scene-btn">背景切换</a>
+                        <div class="scene-pic">
+                        </div>
+                    </div>
+                    <div class="heap-box">
+                        <ul class="heap">
+                        </ul>
+                    </div>
+                    <div class="start">
+                        <a href="#" class="btn-3d purple ">开始游戏</a>
+                    </div>
+                    <div class="play-heap play1-heap">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="play-heap play2-heap">
+                        <ul>
+                        </ul>
+                    </div>
+                    <div class="play-heap play3-heap">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="center-bottom">
+                    <!-- 聊天 -->
+                    <div class="chat">
+                        <a href="#" class="btn-3d yellow chat-btn">聊天</a>
+                        <div class="chat-item">
+                            <ul>
+                                <li>我就是人见人爱、花见花开的皮革超人</li>
+                                <li>我的好兄弟福尔摩汪呢</li>
+                                <li>你们听说过透视眼和点金手吗</li>
+                                <li>往后余生，暴瘦是我，英俊也是我</li>
+                                <li>快点啊，我还等着去拯救世界呢</li>
+                                <li>你打的也太好了吧</li>
+                                <li>别吵了别吵了，都听我皮革超人的</li>
+                                <li>如果我不再是超人，你还愿意和我做朋友吗</li>
+                                <li>为了真理和正义，大你</li>
+                                <li>听说你打不过我和我兄弟</li>
+                                <li>快来快来，再打一局，打完再下</li>
+                                <li>网络真差，我卡卡卡卡卡了</li>
+                                <li>你愿意做我的小龙女吗</li>
+                                <li>下班啦，我去换衣服了，明天见</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="time-box">
+                        <span class="time"></span>
+                    </div>
+                    <div class="call-box">
+                        <a href="#" class="call btn-3d green ">叫地主</a>
+                        <a href="#" class="no-call btn-3d purple">不叫</a>
+                    </div>
+                    <div class="text-box">
+                    </div>
+                    <div class="discard-box">
+                        <a class="btn-3d red discard">出牌</a>
+                        <a class="btn-3d yellow no-discard">不出</a>
+                        <a class="btn-3d blue tips">提示</a>
+                    </div>
+                    <div class="card-count-box">
+                        <span class="card-count"></span>
+                    </div>
+                    <ul class="play play2">
+                    </ul>
+                    <div class="info-box">
+                        <div class="box-left">
+                            <div class="avatar">
+                                <img src="" alt="">
+                                <div class="rank"></div>
+                            </div>
+                            <div class="nickname"></div>
+                        </div>
+                        <div class="box-right">
+                            <div class="bean">
+                                <span></span>
+                                <p class="bean-count"></p>
+                            </div>
+                            <div class="bei">
+                                <span></span>
+                                <p class="bei-number"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="time-box">
+                    <span class="time"></span>
+                </div>
+                <div class="call-box">
+                    <a href="#" class="call btn-3d green">叫地主</a>
+                    <a href="#" class="no-call btn-3d purple">不叫</a>
+                </div>
+                <div class="text-box">
+                </div>
+                <div class="discard-box">
+                    <a class="btn-3d red discard">出牌</a>
+                    <a class="btn-3d yellow no-discard">不出</a>
+                    <a class="btn-3d blue tips">提示</a>
+                </div>
+                <div class="card-count-box">
+                    <span class="card-count"></span>
+                </div>
+                <ul class="play play3">
+                </ul>
+                <div class="info-box" style="display: none;">
+                    <div class="box-left">
+                        <div class="avatar">
+                            <img src="" alt="">
+                            <div class="rank"></div>
+                        </div>
+                        <div class="nickname"></div>
+                    </div>
+                    <div class="box-right">
+                        <div class="bean">
+                            <span></span>
+                            <p class="bean-count"></p>
+                        </div>
+                        <div class="bei">
+                            <span></span>
+                            <p class="bei-number"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 遮罩层 -->
+        <div class="mask">
+            <div class="mask-black">
+            </div>
+            <div class="mask-container">
+                <div class="settlement-panel">
+                    <div class="settlement-top">
+                        <div class="close">✕</div>
+                    </div>
+                    <table class="panel-main">
+                        <tr class="title">
+                            <td></td>
+                            <td>昵称</td>
+                            <td>底分</td>
+                            <td>倍数</td>
+                            <td>欢乐豆</td>
+                        </tr>
+                        <tr class="play2-data">
+                            <td class=""></td>
+                            <td class="names"></td>
+                            <td class="base"></td>
+                            <td class="beis"></td>
+                            <td class="beans"></td>
+                        </tr>
+                        <tr class="play1-data">
+                            <td class=""></td>
+                            <td class="names"></td>
+                            <td class="base"></td>
+                            <td class="beis"></td>
+                            <td class="beans"></td>
+                        </tr>
+                        <tr class="play3-data">
+                            <td class=""></td>
+                            <td class="names"></td>
+                            <td class="base"></td>
+                            <td class="beis"></td>
+                            <td class="beans"></td>
+                        </tr>
+                    </table>
+                    <div class="restart">
+                        <a href="#" class="btn-3d purple ">开始游戏</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/Interface/extra.js"></script>
+    <script src="../js/Interface/data.js"></script>
+    <script src="../js/logic/dealCards.js"></script>
+    <script src="../js/logic/transformCards.js"></script>
+    <script src="../js/logic/checkCardType.js"></script>
+    <script src="../js/logic/compare.js"></script>
+    <script src="../js/logic/check.js"></script>
+    <script src="../js/logic/robotSelectCards.js"></script>
+    <script src="../js/logic/tips.js"></script>
+    <script src="../js/Interface/util.js"></script>
+    <script src="../js/Interface/index.js"></script>
+</body>
+
+</html>

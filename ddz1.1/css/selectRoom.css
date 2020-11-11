@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../static/images/selectRoom/bg2.png) no-repeat;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    color: #c9ffbf;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    width: 200px;
+    height: 80px;
+    top: 20%;
+    left: 15%;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    border: 2px transparent solid;
+    border-image: linear-gradient(to right, #c9ffbf, #ffafbd) 1 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -15px;
+    animation: borderClip 8s linear infinite;
+}
+
+.title::after {
+    animation-delay: -4s;
+}
+
+.title:hover::before,
+.title:hover::after {
+    animation-play-state: paused;
+}
+
+@keyframes borderClip {
+
+    0%,
+    100% {
+        clip: rect(0px, 230px, 2px, 0px);
+    }
+
+    25% {
+        clip: rect(0px, 2px, 111px, 0px);
+    }
+
+    50% {
+        clip: rect(109px, 230px, 111px, 0px);
+    }
+
+    75% {
+        clip: rect(0px, 230px, 111px, 228px);
+    }
+}
+
+.select-room {
+    position: absolute;
+    width: 865px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+}
+
+.item {
+    position: relative;
+    width: 238px;
+    height: 134px;
+    float: left;
+    margin: 33px 0 0 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.item span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+    width: 20px;
+    color: #fff;
+    font-size: 22px;
+    z-index: 100;
+}
+
+.img-bg {
+    position: relative;
+    width: 238px;
+    height: 134px;
+    border-radius: 20px;
+}
+
+.img-bg span {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 36px;
+    color: #ff6700;
+}
+
+.item1 .img-bg {
+    background: url(../static/images/selectRoom/img1.png) no-repeat;
+    background-size: cover;
+}
+
+.item2 .img-bg {
+    background: url(../static/images/selectRoom/img2.png) no-repeat;
+    background-size: cover;
+}
+
+.item3 .img-bg {
+    background: url(../static/images/selectRoom/img3.png) no-repeat;
+    background-size: cover;
+}
+
+.item1 {
+    /* background: url(../static/images/selectRoom/roomBg1.png) no-repeat; */
+    background-size: cover;
+}
+
+.item2 {
+    /* background: url(../static/images/selectRoom/roomBg2.png) no-repeat; */
+    background-size: cover;
+}
+
+.item3 {
+    /* background: url(../static/images/selectRoom/roomBg3.png) no-repeat; */
+    background-size: cover;
+}
